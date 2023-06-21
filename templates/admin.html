@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Page</title>
+    <style>
+        /* CSS for table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        /* CSS for heading */
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+        /* CSS for container */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data View</h1>
+        <table>
+            <tr>
+                <th>Item/Customer</th>
+                <th>Customer1</th>
+                <th>Customer2</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td>{{ data1[0] }}</td>
+                <td>{{ data2[0] }}</td>
+                <td>{{ total_quantity }}</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>{{ data1[1] }}</td>
+                <td>{{ data2[1] }}</td>
+                <td>{{ total_weight }}</td>
+            </tr>
+            <tr>
+                <td>Box Count</td>
+                <td>{{ data1[2] }}</td>
+                <td>{{ data2[2] }}</td>
+                <td>{{ total_box_count }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
